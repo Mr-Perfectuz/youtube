@@ -29,6 +29,13 @@ const ContainerMain = styled.div`
     background: #212121;
 
 `
+
+const MainWrapper = styled.div`
+width: 100%;
+height: 100%;
+    display: flex;
+    flex-direction: column;
+`
 const ContainerWrapper = styled.div`
     max-width: 1664px;
     height: 100%;
@@ -129,4 +136,4 @@ NavRight.Person = styled(Person)`
 
 
 
-export { Container, ContainerWrapper, Nav, NavCenter, NavLeft, NavRight, InputWrapper, Input, SearchWrapper, ContainerMain }
+export { Container, ContainerWrapper, Nav, NavCenter, NavLeft, NavRight, InputWrapper, Input, SearchWrapper, ContainerMain, MainWrapper }

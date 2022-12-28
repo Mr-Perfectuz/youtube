@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import SideBar from '../SideBar';
-import { Container, ContainerWrapper, Nav, NavCenter, NavLeft, NavRight, InputWrapper, Input, SearchWrapper, ContainerMain } from './style';
+import { Container, ContainerWrapper, Nav, NavCenter, NavLeft, NavRight, InputWrapper, Input, SearchWrapper, ContainerMain, MainWrapper } from './style';
 import SearchBtn from '../SearchBtn';
+import Main from '../MainSection';
 
 class Navbar extends Component {
     render() {
@@ -33,7 +34,10 @@ class Navbar extends Component {
                 </Container>
                 <ContainerMain>
                     <SideBar />
-                    <SearchBtn />
+                    <MainWrapper>
+                        <SearchBtn />
+                        <Main />
+                    </MainWrapper>
                 </ContainerMain>
 
             </div>
